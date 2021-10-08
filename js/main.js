@@ -10,7 +10,7 @@ document.writeln("})();");
 document.writeln("</script>");
 document.writeln("");
 (function(){
-    let appDownloadURL1 = '/urls.html' // 线路1
+    let appDownloadURL1 = '/url.html' // 线路1
     let appDownloadURL2 = '/urls.html'  // 线路2
     let appDownloadURL3 = '/xiazai.html'  // app下载1
     let appDownloadURL4 = '/xiazai.html'  // app下载2
