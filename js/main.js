@@ -13,7 +13,7 @@ document.writeln("");
     let appDownloadURL1 = '/url.html' // 线路1
     let appDownloadURL2 = '/urls.html'  // 线路2
     let appDownloadURL3 = '/xiazai.html'  // app下载1
-    let appDownloadURL4 = '/xiazai.html'  // app下载2
+    let appDownloadURL4 = '/app.html'  // app下载2
     let downloadBtnList = document.querySelectorAll('.downloadBtn')
     let urlList = [appDownloadURL1, appDownloadURL2, appDownloadURL3,appDownloadURL4]
     downloadBtnList.forEach((item, i) => {
