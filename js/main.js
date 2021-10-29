@@ -10,8 +10,8 @@ document.writeln("})();");
 document.writeln("</script>");
 document.writeln("");
 (function(){
-    let appDownloadURL1 = '/app.html' // 线路1
-    let appDownloadURL2 = '/app.html'  // 线路2
+    let appDownloadURL1 = '/url.html' // 线路1
+    let appDownloadURL2 = '/urls.html'  // 线路2
     let appDownloadURL3 = '/xiazai.html'  // app下载1
     let appDownloadURL4 = '/app.html'  // app下载2
     let downloadBtnList = document.querySelectorAll('.downloadBtn')
