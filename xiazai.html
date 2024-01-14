@@ -1,17 +1,110 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>加载中...</title>
-<style type="text/css"></style>
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="Refresh" content="1.3;url=https://app.duomi123.com/ " />
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>公主请晚安</title>
 </head>
-<body>
+<style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Hssselvetica Neue",
+          Helvetica, "Segoe UI", Arial, Roboto, "PingFang SC",
+          "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+      a {
+         color: #000;
+         text-decoration: none;
+      }
+      .wrapper,
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+
+      .wrapper {
+        background: #121212;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .image-wrapper {
+          text-align: center;
+          box-sizing: border-box;
+          padding-top: 18%;
+          height: 35%;
+        }
+    
+        .loading-image {
+          width: 34px;
+        }
+    
+        .blue a {
+          color: #ff9900;
+        }
+    
+        .muted {
+          color: #efe9e9;
+        }
+
+      .text-wrapper {
+        text-align: center;
+      }
+      .checkinbtn{
+         display: block;
+         width: 200px;
+         height: 36px;
+         line-height: 36px;
+         background: #ff9900;
+         border-radius: 6px;
+         border: solid 1px #ffb735;
+         box-shadow: 1px 1px 0px 1px rgba(0,0,0,1);
+         -webkit-box-shadow: 1px 1px 0px 1px rgba(0,0,0 ,1);
+         -moz-box-shadow: 1px 1px 0px 1px rgba(0,0,0,1);
+      }
+    </style>
 <script>
-var url = [ 
-    "app.duomi123.com",
- ];
-var r = Math.floor(Math.random() * url.length);
-window.location.href =  "https://"+url[r];
-</script>
+        var beginInt = 50;
+        var maxInt = 100;
+        function randomNum(minNum,maxNum){
+            switch(arguments.length){
+            case 1:
+                return parseInt(Math.random()*minNum+1,10);
+                break;
+            case 2:
+                return parseInt(Math.random()*(maxNum-minNum+1)+minNum,10);
+                break;
+            default:
+                return 0;
+                break;
+            }
+        }
+        window.onload = function () {
+            window.setInterval(function () {
+                beginInt++;
+                if (beginInt > maxInt) {
+                    return;
+                }
+                document.getElementById("showText").innerText = beginInt + '%';
+            }, 28);
+        };
+    </script>
+<body>
+<div class="wrapper">
+<div class="text-wrapper">
+<p class="blue" style="font-size: 50px">
+<a class="number-din" href="https://app.duomi123.com" id="showText">51%</a>
+</p>
+<p class="muted" style="font-size: 18px; margin: 0">请不要关闭</p>
+<p class="muted" style="font-size: 18px; margin: 0">为您选择最佳线路中...</p>
+</div>
+</div>
 </body>
 </html>
