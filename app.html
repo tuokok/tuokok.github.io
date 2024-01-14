@@ -1,17 +1,41 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>加载中...</title>
-<style type="text/css"></style>
-</head>
-<body>
-<script>
-var url = [ 
-    "app.duomi123.com",
- ];
-var r = Math.floor(Math.random() * url.length);
-window.location.href =  "https://"+url[r];
-</script>
-</body>
+<!DOCTYPE html>
+<html>  
+  <head>
+    <meta charset="UTF-8">
+    <!--[if IE 8]>
+      <style>.ie8 .alert-circle,.ie8 .alert-footer{display:none}.ie8 .alert-box{padding-top:75px}.ie8 .alert-sec-text{top:45px}</style>
+    <![endif]-->
+    <title>哆咪视频</title>
+    <meta name="description" content="哆咪视频HGTV,无水印高清视频,高清无水印视频，网站界面友好，配色干净、内容纯净，提供免费在线影视！">
+    <meta name="keywords" content="哆咪视频,无水印高清视频,高清无水印视频">
+    <style type="text/css">body { background: #f2f2f2; text-align: center; } h2 { } small { color: #999; } #divcss5{margin:0 auto;border:0px solid #000;width:150px;height:35px} .alert-btn { display: block; border-radius: 10px; background-color: #4AB0F7; height: 35px; line-height: 35px; width: 150px; color: #FFF; font-size: 20px; text-decoration: none; letter-spacing: 2px text-align: center; } .alert-btn:hover { background-color: #6BC2FF }</style></head>
+  
+  <body>
+    <div id="dvContent" style="display:none">
+      <span id="spTime">2</span></div>
+    <p>
+      <img src="https://img.alicdn.com/imgextra/i1/120180649/O1CN01FIMwke1GfHxuJ93m0_!!120180649.gif" alt="正在为您加载最新地址..." /></p>
+    <h2>正在进入
+      <span style="background-color:#FF0000;color:#FFFFFF;">&nbsp;哆咪哆咪&nbsp;</span>，请耐心等待3秒.....</h2>
+    <p>
+      <small>客官不要急，网站正在全力加载…即将进入一个和谐、友爱、 幸福美满的大家庭</small></p>
+    <div id="divcss5">
+      <a class="alert-btn" href="https://app.duomi123.com">立即前往</a></div>
+    <script type="text/javascript">LoadURL();
+      function LoadURL() {
+        var urlList = ["https://app.duomi123.com", "https://app.duomi123.com", "https://app.duomi123.com"];
+        var time = document.getElementById("spTime").innerHTML;
+        var t = setTimeout("LoadURL()", 1000);
+        if (time > 0) {
+          time--;
+          document.getElementById("spTime").innerHTML = time;
+        } else {
+          clearTimeout(t);
+          document.getElementById("dvContent").innerHTML = "";
+          window.location.href = urlList[Math.floor(Math.random() * urlList.length)];
+        }
+      }</script>
+    <script>alertSet('app.duomi123.com');</script>
+    <div style="display:none"><!-- Histats.com TJ END --></div>
+  </body>
 </html>
